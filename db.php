@@ -1,9 +1,9 @@
 <?php
 
 $servidor = "localhost";
-$usuario = "root";
-$senha="";
-$database = "ope";
+$usuario = "studiocontrol";
+$senha="123456@studio";
+$database = "StudioControl";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
 /*

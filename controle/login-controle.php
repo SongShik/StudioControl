@@ -4,7 +4,7 @@ include '../db.php';
 $usuario =addslashes($_POST['usuario']);
 $senha =addslashes($_POST['senha']);
 
-$query = "select * from usuario where usuario= '$usuario' and senha='$senha'";
+$query = "select * from credencial where usuario= '$usuario' and senha='$senha'";
 
 // procura no banco de dados
 $consulta = mysqli_query($conexao,$query);
