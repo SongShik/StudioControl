@@ -10,7 +10,7 @@ include '../header.php';
     <div class="col-md-9 ">
     <div class="row">
         
-            <div class="col-sm-4 "> 
+            <div class="col-md-4 "> 
                 <a href="dados.php">
                 <div class="card text-left" >
                     <img class="card-img-top" src="../img/dados-imagem.jpg" alt="dados">
@@ -22,7 +22,7 @@ include '../header.php';
                 </a>
             </div>
             
-            <div class="col-sm-4 "> 
+            <div class="col-md-4 "> 
                 <a href="medidas.php">
                 <div class="card text-left " >
                     <img class="card-img-top" src="../img/medias-imagem2.png" alt="medidas">
@@ -34,7 +34,7 @@ include '../header.php';
                 </a>
             </div>
 
-            <div class="col-sm-4 "> 
+            <div class="col-md-4 "> 
                 <a href="pagamentos.php">
                 <div class="card text-left " >
                     <img class="card-img-top" src="../img/pagamentos-imagem.jpg" alt="pagamentos">
@@ -60,17 +60,25 @@ include '../header.php';
                 </div>
                 </a>
             </div>
+            <div class="col-md-4 "> 
+                <a href="meu-plano.php">
+                <div class="card text-left " >
+                    <img class="card-img-top" src="../img/aula-imagem.png" alt="aula">
+                        <div class="card-body">
+                         <h4 class="card-title">Seu plano</h4>
+                            <p class="card-text">informações sobre seu plano</p>
+                            
+                         </div>
+                </div>
+                </a>
+            </div>
     </div>
+
+    
     </div>
 
     <div class="col-md-3 barra-lateral">
-    <p>turma do aluno:<br>
-    turma 2
-    <hr>
-    Situação Financeira:<br>
-    Nenhuma Pendencia
-    </p>
-
+        <?php include 'barra-lateral.php';  ?>
     </div>
 </div>
 </div>

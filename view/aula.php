@@ -1,6 +1,13 @@
 <?php
 include '../cabecalho.php';
 include '../header.php';
+
+include '../db.php';
+
+$id_aluno =  $_SESSION['id_aluno'];
+$query= "SELECT * FROM agendamento_aula where id_aluno=$id_aluno;";
+$consulta_turmas = mysqli_query($conexao,$query);
+
 ?>
 
 <section>
@@ -11,11 +18,11 @@ include '../header.php';
     <div class="row">
         
             <div class="col-sm-6 "> 
-                <a href="aula-personalizada.php">
+                <a href="turma-sair.php">
                 <div class="card text-left" >
                     <img class="card-img-top" src="../img/aula-personalizada.jpg" alt="dados">
                         <div class="card-body">
-                         <h4 class="card-title">Aula Pesonalizada</h4>
+                         <h4 class="card-title">Turmas que você esta matriculado</h4>
                             
                          </div>
                 </div>
@@ -40,13 +47,7 @@ include '../header.php';
     </div>
 
     <div class="col-md-3 barra-lateral">
-    <p>turma do aluno:<br>
-    turma 2
-    <hr>
-    Situação Financeira:<br>
-    Nenhuma Pendencia
-    </p>
-
+        <?php include 'barra-lateral.php';  ?>
     </div>
 </div>
 </div>

@@ -108,6 +108,16 @@ color: inherit;
   border-radius: 5px;
   padding-top: 10px;
 }
+
+
+.linha-vertical {
+  width: 1px;
+  height: 100%;
+  border: 2px solid #f15221;
+
+  margin-left: auto;
+  margin-right: auto;
+}
 /* teste de teste */
 .teste{
   border: 1px solid #2B3E6E;

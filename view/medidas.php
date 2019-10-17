@@ -51,18 +51,16 @@ include '../header.php';
     </div>
 
     <div class="col-md-3 barra-lateral">
-    <p>turma do aluno:<br>
-    turma 2
-    <hr>
-    Situação Financeira:<br>
-    Nenhuma Pendencia
-    </p>
     <?php if( isset($_GET['ok'])){ ?>
             <div class=" alert alert-success mt-5" role="alert">
             Cadastrado nova medida.
             </div>
 
-        <?php } ?>
+        <?php }
+    echo "<br>";
+    include 'barra-lateral.php';  ?>
+ 
+
     </div>
 </div>
 </div>

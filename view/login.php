@@ -29,12 +29,12 @@
             <br>
             <div class="form-group">
                 <label for="exampleInputEmail1">Usuario</label>
-                    <input value="admin" type="text" class="form-control" id="exampleInputEmail1" name="usuario" placeholder="Insira seu email">
+                    <input value="leoo_aprigio" type="text" class="form-control" id="exampleInputEmail1" name="usuario" placeholder="Insira seu email">
             
             </div>
             <div class="form-group">
                  <label for="exampleInputPassword1">Senha</label>
-                    <input value="admin" type="password" class="form-control" id="exampleInputPassword1" name="senha" placeholder="Senha">
+                    <input value="12345678" type="password" class="form-control" id="exampleInputPassword1" name="senha" placeholder="Senha">
             </div>
         <button type="submit" value="login" class="btn btn-primary">Entrar</button>
         <br><br>

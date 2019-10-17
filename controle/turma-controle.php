@@ -1,14 +1,15 @@
 <?php
-
+include '../db.php';
 
 
 $id_turma = $_GET['id_turma'];
-$data = date("d/m/Y HH:ii:ss");  
+$data = date("Y-m-d");  
 session_start();
-$id_perfil = $_SESSION['id_perfil'];
+$id_aluno =  $_SESSION['id_aluno'];
 
 //modifica no banco de dados a turma
-$query = "update aluno_turma SET id_turma = '$id_turma' , data_matricula = '$data'  WHERE  id_aluno = '$id_perfil'";
+$query = "INSERT INTO `studiocontrol`.`aluno_turma` (`id_turma`, `id_aluno`, `data_matricula`) VALUES ('$id_turma', '$id_aluno', '$data');";
+
 $consulta = mysqli_query($conexao,$query);
 
 header('location:../view/turma.php?acerto');
