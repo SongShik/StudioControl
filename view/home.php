@@ -63,7 +63,7 @@ include '../header.php';
             <div class="col-md-4 "> 
                 <a href="meu-plano.php">
                 <div class="card text-left " >
-                    <img class="card-img-top" src="../img/aula-imagem.png" alt="aula">
+                    <img class="card-img-top" src="../img/meu-plano.jpg" alt="aula">
                         <div class="card-body">
                          <h4 class="card-title">Seu plano</h4>
                             <p class="card-text">informações sobre seu plano</p>

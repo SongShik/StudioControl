@@ -1,7 +1,8 @@
 <?php
 
 include '../db.php';
-$id_aluno = 1;
+session_start();
+$id_aluno = $id_aluno =  $_SESSION['id_aluno'];;
 $peso =addslashes($_POST['peso']);
 $biceps_esquerdo =addslashes($_POST['biceps_esquerdo']);
 $cintura_esquerda =addslashes($_POST['cintura_esquerda']);
@@ -9,29 +10,42 @@ $coxa_esquerda =addslashes($_POST['coxa_esquerda']);
 $gemeos_esquerdo =addslashes($_POST['gemeos_esquerdo']);
 $quadril =addslashes($_POST['quadril']);
 $peitoral =addslashes($_POST['peitoral']);
-$biceps_direiro =addslashes($_POST['biceps_direiro']);
-$cintura_direira =addslashes($_POST['cintura_direira']);
-$coxa_direira =addslashes($_POST['coxa_direira']);
-$gemeos_direiro =addslashes($_POST['gemeos_direiro']);
+$biceps_direito =addslashes($_POST['biceps_direito']);
+$cintura_direita =addslashes($_POST['cintura_direita']);
+$coxa_direita =addslashes($_POST['coxa_direita']);
+$gemeos_direito =addslashes($_POST['gemeos_direito']);
 $data =addslashes($_POST['data']);
-
-$query = "insert into medida(id_aluno,peso,biceps_esquerdo,cintura_esquerda,
-                            coxa_esquerda,gemeos_esquerdo,quadril,
-                            peitoral,biceps_direiro,cintura_direira,coxa_direira,
-                            gemeos_direiro,data) values (
+$query = "insert into medidas(
+    id_aluno,
+    peso,
+    biceps_esquerdo,
+    cintura_esquerda,
+    coxa_esquerda,
+    gemeos_esquerdo,
+    quadril,
+    peitoral,
+    biceps_direito,
+    cintura_direita,
+    coxa_direita,
+    gemeos_direito,
+    data_atualizacao) 
+    values (
     '$id_aluno',
     '$peso',
-   '$biceps_esquerdo',
+    '$biceps_esquerdo',
     '$cintura_esquerda',
     '$coxa_esquerda',
     '$gemeos_esquerdo',
     '$quadril',
     '$peitoral',
-    '$biceps_direiro',
-    '$cintura_direira',
-    '$coxa_direira',
-    '$gemeos_direiro',
+    '$biceps_direito',
+    '$cintura_direita',
+    '$coxa_direita',
+    '$gemeos_direito',
     '$data')";
+
+
+
 
 $consulta = mysqli_query($conexao,$query);
 

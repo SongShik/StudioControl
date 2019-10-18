@@ -15,13 +15,13 @@
             </a>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item"> <a class="nav-link" href="home.php"> Inicio </a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="medidas.php"> Medidas </a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#"> Pagamentos </a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="aula.php"> Aulas </a> </li>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item"> <a class="nav-link text-white" href="home.php"> Inicio </a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="medidas.php"> Medidas </a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="pagamentos.php"> Pagamentos </a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="aula.php"> Aulas </a> </li>
                    
-                    <li class="nav-item"> <a class="nav-link" href="../controle/logout-controle.php">
+                    <li class="nav-item"> <a class="nav-link text-white" href="../controle/logout-controle.php">
                         <?php 
                             session_start();
                             echo $_SESSION['usuario'];?> (sair)</a> </li>

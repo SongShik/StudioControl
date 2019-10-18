@@ -21,7 +21,7 @@ $consulta_turmas = mysqli_query($conexao,$query);
     while ($linha = mysqli_fetch_array($consulta_turmas)) {
         echo '<br>Aula de: '.$linha['nome'];
         echo '<br>Professor: '.$linha['nome_completo'];
-        echo '<br>Data: '.$linha['data_horario'];
+        echo '<br>Data: '.date('d/m/Y H:i:s', strtotime($linha['data_horario']));
         echo '<br>Treino de: '.$linha['nome'];
         echo'<hr>';
     }

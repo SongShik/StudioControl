@@ -4,6 +4,7 @@ include '../header.php';
 
 include '../db.php';
 $id_aluno =  $_SESSION['id_aluno'];
+/*
 $query = "
 select
 turma.nome,
@@ -16,6 +17,18 @@ inner join Perfil on professor.id_perfil=perfil.id
 inner join Horario_Turma on Horario_Turma.id=turma.id
 inner join Aluno_Turma on Aluno_Turma.id_turma=turma.id
 where Aluno_Turma.id_aluno=$id_aluno;
+";
+*/
+$query = "
+select
+turma.nome,
+perfil.nome_completo,
+turma.descricao 
+from turma 
+inner join Professor on professor.id=turma.id_professor
+inner join Perfil on professor.id_perfil=perfil.id
+inner join Aluno_Turma on Aluno_Turma.id_turma=turma.id
+where !Aluno_Turma.id_aluno=$id_aluno;
 ";
 $consulta_turmas = mysqli_query($conexao,$query);
 
@@ -41,7 +54,8 @@ $consulta_turmas = mysqli_query($conexao,$query);
             while ($linha = mysqli_fetch_array($consulta_turmas)) {
                 echo '<tr> <td>'.$linha['nome'].'</td>';
                 echo '<td>'.$linha['nome_completo'].'</td>';
-                echo '<td>'.$linha['horario_inicio'].'</td>';
+                /*echo '<td>'.$linha['horario_inicio'].'</td>';*/
+                echo "<td>horario turma</td>";
                 echo '<td>'.$linha['descricao'].'</td>';
         ?>
                 <td><a href="../controle/turma-controle.php?id_turma=<?php echo $linha['id'];?>">

@@ -48,19 +48,19 @@ include '../header.php';
             </div>
             <div class="form-group">
                 <label >Bíceps direito:</label>
-                <input  type="text" name="biceps_direiro" class="form-control">
+                <input  type="text" name="biceps_direito" class="form-control">
             </div>
             <div class="form-group">
                 <label >Cintura direita:</label>
-                <input  type="text" name="cintura_direira" class="form-control">
+                <input  type="text" name="cintura_direita" class="form-control">
             </div>
             <div class="form-group">
                 <label >Coxa direita:</label>
-                <input  type="text" name="coxa_direira" class="form-control">
+                <input  type="text" name="coxa_direita" class="form-control">
             </div>
             <div class="form-group">
                 <label >Gemeos direito:</label>
-                <input  type="text" name="gemeos_direiro" class="form-control">
+                <input  type="text" name="gemeos_direito" class="form-control">
             </div>
             <div class="form-group">
                 <label >Data Atualização:</label>

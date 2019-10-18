@@ -15,7 +15,7 @@ include '../header.php';
                 <div class="card text-left" >
                     <img class="card-img-top" src="../img/gradico-evolucao-imagem.jpg" alt="dados">
                         <div class="card-body">
-                         <h4 class="card-title">Grafico de evolução</h4>
+                         <h4 class="card-title">Grafico  evolução</h4>
                             
                          </div>
                 </div>
