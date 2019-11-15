@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500, 700|Lilita+One|Raleway:500, 400&display=swap');
+
 body {
   margin: 0px;
   font-family: 'Galano Grotesque Alt', Arial, sans-serif !important;
@@ -5,8 +7,6 @@ body {
   color: #666 !important;
   
 }
-
-
 
 /*  menu */
 .menu{
@@ -18,7 +18,15 @@ box-shadow: 0 1px 10px 0 rgba(31, 31, 31, 0.28);
 margin-bottom: 50px;
 }
 
+#index {
+  color: #000!important;
+  background-color: #FFF;
+}
 
+#index button {
+  outline: none!important;
+  box-shadow: none!important;
+}
 
 nav .navbar-nav li a{
 color: white !important;
@@ -38,6 +46,7 @@ li > a:after{
     transition: transform .3s;
     
 }
+
 li > a:hover:after{
     transform: scaleX(1);
     transition: transform .3s;
@@ -109,6 +118,158 @@ color: inherit;
   padding-top: 10px;
 }
 
+/* index */
+.banner {
+  background-image: url(../img/banner.jpg);
+  height: 100vh;
+}
+.banner .navbar {
+  max-height: 4rem;
+}
+
+.banner li > a:after{
+  background: #FFF;
+}
+
+/* .banner .navbar:hover {
+  background: white;
+  transition: all 0.5s ease;
+  color: #000!important;
+} */
+
+/* .banner .navbar:hover a  {
+  color: #000!important;
+  transition: color 0.5s ease;
+} */
+
+.banner .logo {
+  max-width: 4rem;
+}
+
+.banner .logo img {
+  width: 100%;
+}
+
+.comoFuncionaTitulo {
+  font-family: 'Lilita One';
+}
+
+.tituloPasso {
+  font-family: 'Raleway';
+  font-weight: 500;
+}
+
+.descricaoPasso {
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+}
+
+.plano {
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
+.plano:hover {
+  transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: scale(1.05);
+  
+} 
+
+.divisorio {
+  border-color: #222!important;
+  border-width: 0.5px!important;
+}
+
+.tituloAulas {
+  font-size: 0.9rem;
+}
+
+.aulasPlano {
+  font-size: 0.8rem;
+}
+
+.tituloPlano {
+  color: #00adff;
+}
+
+.precoPlano {
+  font-size: 1.8rem;
+  font-family: 'Montserrat';
+  color: #00adff;
+}
+
+.btnAderir {
+  background-color: #16465f;
+  color: #FFF;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.mostrarMais {
+  max-height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s linear;
+  overflow: hidden;
+}
+
+.show {
+  max-height: 100%;
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+.btnVerMais {
+  background: #16465f;
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+.btnVerMais:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+
+.rodape {
+  background: #F9F9F9;
+  padding: 2rem 2rem;
+}
+
+.rodape .logo {
+  max-width: 10rem;
+  transition: all 0.5s ease;
+}
+
+.rodape .logo:hover {
+  transform: rotate(360deg);
+}
+
+.rodape .logo img {
+  width: 100%;
+}
+
+.redesSociais {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.redesSociais:hover {
+  transform: scale(1.1) translate(0px, -10px);
+  transition: all 0.2s ease;
+}
+
+.rodape .mapa {
+  width: 100%;
+  height: 100%;
+}
+
+.contatoIcon {
+  max-width: 3rem;
+}
 
 /* teste de teste */
 .teste{
@@ -120,3 +281,4 @@ color: inherit;
 .teste2{
   border: 1px solid #f15221;
 }
+

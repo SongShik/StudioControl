@@ -24,12 +24,14 @@ select
 Aluno_Turma.id,
 turma.nome,
 perfil.nome_completo,
+horario_turma.horario_inicio,
 turma.descricao 
 from turma 
 inner join Professor on professor.id=turma.id_professor
 inner join Perfil on professor.id_perfil=perfil.id
 inner join Aluno_Turma on Aluno_Turma.id_turma=turma.id
-where Aluno_Turma.id_aluno=$id_aluno;
+inner join horario_turma on horario_turma.id_turma = turma.id
+where Aluno_Turma.id_aluno=$id_aluno
 ";
 $consulta_turmas = mysqli_query($conexao,$query);
 
@@ -51,15 +53,14 @@ $consulta_turmas = mysqli_query($conexao,$query);
         </tr>
     </thead>
     <tbody>
-    <?php 
+        <?php 
             while ($linha = mysqli_fetch_array($consulta_turmas)) {
                 echo '<tr> <td>'.$linha['nome'].'</td>';
                 echo '<td>'.$linha['nome_completo'].'</td>';
-                /*echo '<td>'.$linha['horario_inicio'].'</td>';*/
-                echo "<td>horario turma</td>";
+                echo '<td>'.$linha['horario_inicio'].'</td>';
+                
                 echo '<td>'.$linha['descricao'].'</td>';
-                echo $linha['id'];
-                       ?>
+        ?>
                 <td><a href="../controle/turma-sair-controle.php?id=<?php echo $linha['id'];?>">
                                         
                 <?xml version="1.0" encoding="iso-8859-1"?>

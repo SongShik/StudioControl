@@ -10,7 +10,7 @@ include '../header.php';
     <div class="col-md-9 ">
     <div class="row">
         
-            <div class="col-sm-4 "> 
+            <div class="col-sm-6"> 
                 <a href="grafico-evolucao.php">
                 <div class="card text-left" >
                     <img class="card-img-top" src="../img/gradico-evolucao-imagem.jpg" alt="dados">
@@ -22,7 +22,7 @@ include '../header.php';
                 </a>
             </div>
             
-            <div class="col-sm-4 "> 
+            <!-- <div class="col-sm-4 "> 
                 <a href="#Medidas">
                 <div class="card text-left " >
                     <img class="card-img-top" src="../img/evolucao-foto-imagem.jpg" alt="medidas">
@@ -32,9 +32,9 @@ include '../header.php';
                          </div>
                 </div>
                 </a>
-            </div>
+            </div> -->
 
-            <div class="col-sm-4 "> 
+            <div class="col-sm-6 "> 
                 <a href="novas-medidas.php">
                 <div class="card text-left " >
                     <img class="card-img-top" src="../img/novas-medidas-imagem.jpg" alt="medidas">

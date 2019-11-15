@@ -22,7 +22,8 @@ for (var i = 0; i < numClass; i++) {
 
 /* data tables */
 $(document).ready(function(){
-  
+	$('#turmas').DataTable();
+	
     $.ajax({
       url: 'http://localhost/StudioControl/view/graficos.php',
       method:"GET",

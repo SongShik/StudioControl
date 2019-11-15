@@ -22,7 +22,7 @@ $consulta_turmas = mysqli_query($conexao,$query);
                 <div class="card text-left" >
                     <img class="card-img-top" src="../img/aula-personalizada.jpg" alt="dados">
                         <div class="card-body">
-                         <h4 class="card-title">Turmas que você esta matriculado</h4>
+                         <h4 class="card-title">Turmas já matriculadas</h4>
                             
                          </div>
                 </div>

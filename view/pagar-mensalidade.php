@@ -27,13 +27,13 @@ while ($linha = mysqli_fetch_array($consulta_pagamentos)) {
         <div class="row dados-pessoais pt-5"> 
 
         <div class="pl-5 col-md-6">
-                <h5>Valor a ser pago: <?php echo $valor; ?>R$</h5>
-                <h5>Desconto: <?php echo $desconto; ?>R$</h5>
+                <h5>Valor a ser pago: R$ <?php echo $valor; ?></h5>
+                <h5>Desconto: R$ <?php echo $desconto; ?></h5>
                 <h5>Data Vencimento: <?php echo $data_vencimento; ?></h5>
         </div>
         <div class="pl-5 col-md-6 ">
                 <h5>Mês referencia: <?php echo $mes_referencia; ?></h5>
-                <h5>Juros: <?php echo $juros; ?>R$</h5>
+                <h5>Juros: R$ <?php echo $juros; ?></h5>
                 <h5>observacao: <?php echo $observacao; ?></h5>
                 
         </div>

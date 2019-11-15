@@ -1,8 +1,8 @@
 <?php
 
 $servidor = "localhost";
-$usuario = "root";
-$senha="root";
+$usuario = "studiocontrol";
+$senha="123456@studio";
 $database = "StudioControl";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $database);

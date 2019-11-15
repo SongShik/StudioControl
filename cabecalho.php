@@ -9,9 +9,9 @@
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
     <link rel='stylesheet' href='//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css'>
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
 
     <!--jquery -->
-    <script src='../js/jquery-3.4.1.min.js'></script>
+    <script src='js/jquery-3.4.1.min.js'></script>
 
 </head>

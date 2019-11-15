@@ -4,7 +4,7 @@
 
 session_start();
 include 'db.php';
-include 'view/login.php';
+include 'view/index.php';
 /*
 if(isset($_SESSION['login'])){
     echo "<br> passou arrombado"; 
